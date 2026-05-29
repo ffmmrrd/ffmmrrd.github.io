@@ -368,3 +368,61 @@ a,
 .card-announcement-animation {
   color: #e8c57c !important;
 }
+
+/* 标签页精修：冰蓝玻璃标签，和雪山夜色保持统一 */
+#page .tag-cloud-list,
+#tag .tag-cloud-list,
+.tag-cloud-list {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  padding: 18px 10px !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#page .tag-cloud-list a,
+#tag .tag-cloud-list a,
+.tag-cloud-list a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 8px 18px !important;
+  color: #dce8f8 !important;
+  font-size: 0.98rem !important;
+  line-height: 1.2;
+  background: linear-gradient(135deg, rgba(25, 48, 84, 0.92), rgba(18, 36, 68, 0.82)) !important;
+  border: 1px solid rgba(190, 215, 245, 0.24);
+  border-radius: 999px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  text-shadow: none !important;
+  transition: all 0.25s ease;
+}
+
+#page .tag-cloud-list a::before,
+#tag .tag-cloud-list a::before,
+.tag-cloud-list a::before {
+  content: '#';
+  margin-right: 6px;
+  color: #e8c57c;
+  opacity: 0.9;
+}
+
+#page .tag-cloud-list a:hover,
+#tag .tag-cloud-list a:hover,
+.tag-cloud-list a:hover {
+  color: #101827 !important;
+  background: linear-gradient(135deg, #d9b36c, #f1c982) !important;
+  border-color: rgba(241, 201, 130, 0.72);
+  box-shadow: 0 14px 32px rgba(217, 179, 108, 0.24);
+  transform: translateY(-2px);
+}
+
+#page .tag-cloud-list a:hover::before,
+#tag .tag-cloud-list a:hover::before,
+.tag-cloud-list a:hover::before {
+  color: #101827;
+}
