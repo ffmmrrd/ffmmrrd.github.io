@@ -172,3 +172,67 @@ a,
 ::-webkit-scrollbar-track {
   background: #08101f !important;
 }
+
+/* 首页文章卡片覆盖：统一成深蓝半透明，避免白块破坏雪山氛围 */
+#recent-posts .recent-post-item,
+#recent-posts .recent-post-item > .recent-post-info,
+#recent-posts .recent-post-item > .recent-post-cover,
+#recent-posts .recent-post-item .post_cover,
+.layout #recent-posts .recent-post-item {
+  background: rgba(13, 27, 52, 0.78) !important;
+  border: 1px solid rgba(190, 215, 245, 0.18) !important;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.32) !important;
+}
+
+#recent-posts .recent-post-item {
+  overflow: hidden;
+  backdrop-filter: blur(18px) saturate(128%);
+}
+
+#recent-posts .recent-post-item .article-title {
+  color: #eef5ff !important;
+}
+
+#recent-posts .recent-post-item .article-title:hover {
+  color: #f1c982 !important;
+}
+
+#recent-posts .recent-post-item .article-meta-wrap,
+#recent-posts .recent-post-item .article-meta-wrap a,
+#recent-posts .recent-post-item .article-meta-wrap span {
+  color: rgba(220, 232, 248, 0.72) !important;
+}
+
+#recent-posts .recent-post-item .content,
+#recent-posts .recent-post-item .article-content,
+#recent-posts .recent-post-item .post-content,
+#recent-posts .recent-post-item .recent-post-info,
+#recent-posts .recent-post-item .recent-post-info .content {
+  color: rgba(226, 236, 249, 0.86) !important;
+}
+
+#recent-posts .recent-post-item a:not(.article-title) {
+  color: #e7c277 !important;
+}
+
+#recent-posts .recent-post-item:hover {
+  transform: translateY(-3px);
+  border-color: rgba(241, 201, 130, 0.36) !important;
+  box-shadow: 0 24px 62px rgba(0, 0, 0, 0.42) !important;
+}
+
+/* 右侧卡片细节：降低金色冲击，让整体更克制 */
+#aside-content .card-info #card-info-btn {
+  background: linear-gradient(135deg, #c99b55, #e8c57c) !important;
+  color: #0c1628 !important;
+}
+
+#aside-content .card-info .headline,
+#aside-content .card-info .author-info__description,
+#aside-content .card-info .site-data > a .headline {
+  color: rgba(226, 236, 249, 0.78) !important;
+}
+
+#aside-content .card-info .site-data > a .length-num {
+  color: #e8c57c !important;
+}
