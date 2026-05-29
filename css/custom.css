@@ -236,3 +236,135 @@ a,
 #aside-content .card-info .site-data > a .length-num {
   color: #e8c57c !important;
 }
+
+/* 修复首页文章卡片内部横线：不要给封面子容器加边框 */
+#recent-posts .recent-post-item > .recent-post-cover,
+#recent-posts .recent-post-item .post_cover,
+#recent-posts .recent-post-item .recent-post-cover {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+#recent-posts .recent-post-item > .recent-post-cover:empty,
+#recent-posts .recent-post-item .post_cover:empty,
+#recent-posts .recent-post-item .recent-post-cover:empty {
+  display: none !important;
+}
+
+#recent-posts .recent-post-item::before,
+#recent-posts .recent-post-item::after,
+#recent-posts .recent-post-info::before,
+#recent-posts .recent-post-info::after {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* 非首页顶部横幅：把归档、标签、分类、文章页的浅蓝色改成深蓝雪山色 */
+#page-header:not(.full_page) {
+  background:
+    linear-gradient(180deg, rgba(6, 14, 30, 0.82), rgba(11, 24, 48, 0.9)),
+    radial-gradient(circle at 68% 42%, rgba(232, 197, 124, 0.22), transparent 32%),
+    linear-gradient(135deg, #0a1529 0%, #173557 55%, #0b1426 100%) !important;
+}
+
+#page-header:not(.full_page)::before {
+  background: rgba(5, 11, 24, 0.28) !important;
+}
+
+#page-header:not(.full_page) #page-site-info,
+#page-header:not(.full_page) #post-info,
+#page-header:not(.full_page) .page-title,
+#page-header:not(.full_page) .post-title {
+  color: #f4f8ff !important;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.48);
+}
+
+#page-header:not(.full_page) a,
+#page-header:not(.full_page) .post-meta,
+#page-header:not(.full_page) .post-meta a,
+#page-header:not(.full_page) #post-meta {
+  color: rgba(226, 236, 249, 0.86) !important;
+}
+
+/* 归档、标签、分类页面主体：统一深蓝毛玻璃 */
+#archive,
+#tag,
+#category,
+#page,
+#post,
+.article-sort,
+.tag-cloud-list,
+.category-lists {
+  background: rgba(13, 27, 52, 0.78) !important;
+  border: 1px solid rgba(190, 215, 245, 0.18) !important;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.32) !important;
+  color: #dce8f8 !important;
+}
+
+.article-sort-title,
+.article-sort-item-title,
+.article-sort-item-time,
+.category-list-count,
+.category-list-link,
+.tag-cloud-list a,
+#tag .tag-cloud-list a,
+#page .tag-cloud-list a {
+  color: #dce8f8 !important;
+}
+
+.article-sort-item-title:hover,
+.category-list-link:hover,
+.tag-cloud-list a:hover,
+#tag .tag-cloud-list a:hover,
+#page .tag-cloud-list a:hover {
+  color: #f1c982 !important;
+}
+
+.article-sort-item::before,
+.article-sort-title::before,
+.category-list-count::before,
+.article-sort-item-year::before {
+  background: #d9b36c !important;
+  border-color: rgba(241, 201, 130, 0.45) !important;
+}
+
+.article-sort {
+  border-left-color: rgba(217, 179, 108, 0.45) !important;
+}
+
+/* 文章详情页：正文区域与标题层级统一成冷白 + 暖金 */
+#post .post-copyright,
+#post .tag_share,
+#post .pagination-post,
+#post .relatedPosts {
+  background: rgba(10, 22, 43, 0.72) !important;
+  border: 1px solid rgba(190, 215, 245, 0.16) !important;
+  color: #dce8f8 !important;
+}
+
+#post h1,
+#post h2,
+#post h3,
+#post h4 {
+  color: #f4f8ff !important;
+}
+
+#post h1::before,
+#post h2::before,
+#post h3::before,
+#post h4::before {
+  color: #d9b36c !important;
+}
+
+#post .tag_share .post-meta__tags,
+#post .post-copyright a,
+#post .pagination-post a {
+  color: #e8c57c !important;
+}
+
+/* 右侧公告图标颜色不要太刺眼 */
+#aside-content .item-headline i,
+.card-announcement-animation {
+  color: #e8c57c !important;
+}
