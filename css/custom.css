@@ -1,0 +1,29 @@
+  #page-header.full_page {
+  position: relative;
+  background: transparent !important;
+  overflow: hidden;
+  }
+
+  #page-header.full_page .home-video-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  }
+
+  #page-header.full_page::before {
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.35) !important;
+  }
+
+  #page-header.full_page #site-info,
+  #page-header.full_page #scroll-down {
+  position: relative;
+  z-index: 2;
+  }
+
+  #nav {
+  z-index: 3;
+  }
